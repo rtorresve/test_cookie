@@ -61,11 +61,3 @@ services:
     <<: *django
     image: test_cookie_production_flower
     command: /start-flower
-
-  angular:
-    image: pipekung/angular
-    volumes:
-      - /path/to/project:/usr/src/app
-    ports:
-      - 4200:4200
-    command: yarn start
